@@ -5,7 +5,7 @@ import "./input.css";
 function App() {
   return (
     <div className="wrapper">
-      <nav>
+      <nav className="bg-secondary">
         <img src={logo} className="logo" alt="logo" />
       </nav>
       <div className="hero">
