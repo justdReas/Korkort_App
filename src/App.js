@@ -8,7 +8,10 @@ function App() {
   return (
     <div className="wrapper">
       <nav className="bg-secondary">
-        <Spline scene="https://prod.spline.design/xXq89CAzYxe9LNrY/scene.splinecode" />
+        <Spline
+          className="car"
+          scene="https://prod.spline.design/xXq89CAzYxe9LNrY/scene.splinecode"
+        />
       </nav>
       <div className="hero">
         <h1 className="header">
