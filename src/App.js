@@ -1,4 +1,4 @@
-
+import Login from "./components/Login.js";
 import "./App.css";
 import "./input.css";
 
@@ -14,9 +14,7 @@ function App() {
         />
       </nav>
       <div className="hero">
-        <h1 className="header">
-          Tailwind CSS makes styling React components easier!
-        </h1>
+      <Login />
       </div>
     </div>
   );
