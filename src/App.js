@@ -1,4 +1,4 @@
-import logo from "./img/right2drive.png";
+
 import "./App.css";
 import "./input.css";
 
