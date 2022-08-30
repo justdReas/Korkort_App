@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/api/get", (req, res) => {
+app.get("/", (req, res) => {
   const sqlGet = "SELECT * FROM right2driveDB";
   db.query(sqlGet, (error, result) => {
     res.send(result);
