@@ -1,4 +1,4 @@
-
+import "../components/Login.js";
 import "./App.css";
 import "./input.css";
 
@@ -17,6 +17,7 @@ function App() {
         <h1 className="header">
           Tailwind CSS makes styling React components easier!
         </h1>
+        <Login></Login>
       </div>
     </div>
   );
