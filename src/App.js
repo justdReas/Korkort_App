@@ -1,9 +1,8 @@
-import "../components/Login.js";
+import Login from  "./components/Login.js";
 import "./App.css";
 import "./input.css";
 
 import Spline from "@splinetool/react-spline";
-
 function App() {
   return (
     <div className="wrapper">
@@ -17,7 +16,7 @@ function App() {
         <h1 className="header">
           Tailwind CSS makes styling React components easier!
         </h1>
-        <Login></Login>
+        <Login />
       </div>
     </div>
   );
