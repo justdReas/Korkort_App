@@ -14,7 +14,7 @@ function App() {
   const [values, setValues] = useState({
     username: "",
     email: "",
-    birthday: "",
+    datum: "",
     password: "",
     confirmPassword: "",
   });
@@ -24,10 +24,10 @@ function App() {
       id: 1,
       name: "username",
       type: "text",
-      placeholder: "Username",
+      placeholder: "Användarnamn",
       errorMessage:
         "Username should be 3-16 characters and shouldn't include any special character!",
-      label: "Username",
+      label: "Användarnamn",
       pattern: "^[A-Za-z0-9]{3,16}$",
       required: true,
     },
@@ -44,8 +44,8 @@ function App() {
       id: 3,
       name: "birthday",
       type: "date",
-      placeholder: "Birthday",
-      label: "Birthday",
+      placeholder: "Datum",
+      label: "Datum",
     },
     {
       id: 4,
