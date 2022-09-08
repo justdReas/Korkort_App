@@ -1,8 +1,9 @@
-import Login from "./components/Login.js";
+
 import FormInput from "./components/FormInput.js";
 import "./App.css";
 import "./input.css";
 import "./components/form.css";
+import * as React from 'react';
 
 import Spline from "@splinetool/react-spline";
 import { useRef, useState } from "react";
@@ -18,21 +19,35 @@ function App() {
     password: "",
     confirmPassword: "",
   });
+  const [checked, setChecked] = React.useState(false);
+
+  const handleChange = () => {
+    setChecked(!checked);
+  };
 
   const inputs = [
     {
       id: 1,
-      name: "username",
+      name: "Förnamn",
       type: "text",
-      placeholder: "Användarnamn",
-      errorMessage:
-        "Username should be 3-16 characters and shouldn't include any special character!",
-      label: "Användarnamn",
-      pattern: "^[A-Za-z0-9]{3,16}$",
+      placeholder: "Förnamn",
+      //errorMessage:
+     // "Username should be 3-16 characters and shouldn't include any special character!",
+    //label: "Användarnamn",
+     // pattern: "^[A-Za-z0-9]{3,16}$",
+      label: "Förnamn",
       required: true,
     },
     {
       id: 2,
+      name: "Efternamn",
+      type: "test",
+      placeholder: "Efternamn",
+      label: "Efternamn",
+      required: true,
+    },
+    {
+      id: 3,
       name: "email",
       type: "email",
       placeholder: "Email",
@@ -49,26 +64,36 @@ function App() {
     },
     {
       id: 4,
-      name: "password",
-      type: "password",
-      placeholder: "Password",
-      errorMessage:
-        "Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!",
-      label: "Password",
-      pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
+      name: "Mobilnummer",
+      type: "Mobilnummer",
+      placeholder: "Mobilnummer",
+     // errorMessage:
+       // "Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!",
+      label: "Mobilnummer",
+      //pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
       required: true,
     },
-    {
-      id: 5,
-      name: "confirmPassword",
-      type: "password",
-      placeholder: "Confirm Password",
-      errorMessage: "Passwords don't match!",
-      label: "Confirm Password",
-      pattern: values.password,
-      required: true,
-    },
+  //   {
+  //     id: 5,
+  //     name: "confirmPassword",
+  //     type: "password",
+  //     placeholder: "Confirm Password",
+  //     errorMessage: "Passwords don't match!",
+  //     label: "Confirm Password",
+  //     pattern: values.password,
+  //     required: true,
+  //   },
   ];
+  <div>
+    <label>
+      <input
+        type="checkbox"
+        checked={checked}
+        onChange={handleChange}
+      />
+      My value
+      </label>
+</div>
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -101,7 +126,7 @@ function App() {
         ))}
         <button>Submit</button>
       </form>
-        <Login />
+        
       </div>
     </div>
   );
