@@ -1,27 +1,21 @@
-import { initializeApp } from 'firebase/app';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
-// Follow this pattern to import other Firebase services
-// import { } from 'firebase/<service>';
-
-// TODO: Replace the following with your app's Firebase project configuration
-const index.js = {
-  //...
-};
-
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
-// Get a list of cities from your database
-async function getCities(db) {
-  const citiesCol = collection(db, 'cities');
-  const citySnapshot = await getDocs(citiesCol);
-  const cityList = citySnapshot.docs.map(doc => doc.data());
-  return cityList;
-}
-// TODO: Replace the following with your app's Firebase project configuration
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  //...
+  apiKey: "AIzaSyBQKJhFZue54xuqhOby3Scr0Oao_BmoqAk",
+  authDomain: "right2drive-96102.firebaseapp.com",
+  projectId: "right2drive-96102",
+  storageBucket: "right2drive-96102.appspot.com",
+  messagingSenderId: "1027008740480",
+  appId: "1:1027008740480:web:6b9e504e72b82536ddba65",
+  measurementId: "G-B3QG1K8XS1"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
