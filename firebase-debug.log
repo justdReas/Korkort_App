@@ -1,0 +1,21 @@
+[debug] [2022-09-10T01:59:31.187Z] ----------------------------------------------------------------------
+[debug] [2022-09-10T01:59:31.190Z] Command:       /usr/local/bin/firebase /Users/lihemy/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2022-09-10T01:59:31.190Z] CLI Version:   11.8.0
+[debug] [2022-09-10T01:59:31.191Z] Platform:      darwin
+[debug] [2022-09-10T01:59:31.191Z] Node Version:  v16.16.0
+[debug] [2022-09-10T01:59:31.201Z] Time:          Sat Sep 10 2022 03:59:31 GMT+0200 (GMT+02:00)
+[debug] [2022-09-10T01:59:31.201Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-10T01:59:31.210Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-10T01:59:31.210Z] > authorizing via signed-in user (laleh.yo@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/lihemy/dev/Korkort_App
+
