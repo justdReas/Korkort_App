@@ -3,14 +3,23 @@ import FormInput from "./components/FormInput.js";
 import "./App.css";
 import "./input.css";
 import "./components/form.css";
-import * as React from 'react';
+
+
+
 
 import Spline from "@splinetool/react-spline";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 
 
 function App() {
+  const [first, setFirst] = useState(true);
+  const [second, setSecond] = useState(true);
+
+
+  const handleChange = (data) => {
+    console.log(data);
+  }
   //const [username,setUsername] = useState("")
   const [values, setValues] = useState({
     username: "",
@@ -19,11 +28,7 @@ function App() {
     password: "",
     confirmPassword: "",
   });
-  const [checked, setChecked] = React.useState(false);
-
-  const handleChange = () => {
-    setChecked(!checked);
-  };
+  
 
   const inputs = [
     {
@@ -85,14 +90,7 @@ function App() {
   //   },
   ];
   <div>
-    <label>
-      <input
-        type="checkbox"
-        checked={checked}
-        onChange={handleChange}
-      />
-      My value
-      </label>
+   
 </div>
 
   const handleSubmit = (e) => {
@@ -105,6 +103,8 @@ function App() {
   return (
     <div className="wrapper">
       <nav className="bg-secondary">
+     
+        
         <Spline
           className="car"
           scene="https://prod.spline.design/xXq89CAzYxe9LNrY/scene.splinecode"
@@ -122,12 +122,20 @@ function App() {
             {...input}
             value={values[input.name]}
             onChange={onChange}
+            
           />
+          
         ))}
+          <div className="App">
+            <input type="checkbox" value={first} onChange={() => handleChange("First")} /> Email
+            <input type="checkbox" value={second} onChange={() => handleChange("Second")} /> Sms
+            <div class="g-recaptcha" data-sitekey="6Lfh-xoeAAAAAL6D9bn_LABq10M1ZtpYup5-wksY"></div>
+            
+          </div>
         <button>Submit</button>
       </form>
-        
       </div>
+     
     </div>
   );
 }

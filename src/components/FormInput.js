@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./formInput.css";
 
 const FormInput = (props) => {
@@ -8,6 +8,8 @@ const FormInput = (props) => {
   const handleFocus = (e) => {
     setFocused(true);
   };
+
+  
 
   return (
     <div className="formInput">
@@ -23,6 +25,7 @@ const FormInput = (props) => {
       />
       <span>{errorMessage}</span>
     </div>
+    
   );
 };
 
