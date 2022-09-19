@@ -21,6 +21,9 @@ form{
 h1{
     color: rgb(77, 1, 77);
     text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    
 }
 
 button{

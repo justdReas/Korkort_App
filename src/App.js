@@ -9,6 +9,7 @@ import "./components/form.css";
 
 import Spline from "@splinetool/react-spline";
 import { useState } from "react";
+import { FooterContainer } from "./containers/footer.js";
 
 
 
@@ -104,7 +105,7 @@ function App() {
     <div className="wrapper">
       <nav className="bg-secondary">
      
-        
+   
         <Spline
           className="car"
           scene="https://prod.spline.design/xXq89CAzYxe9LNrY/scene.splinecode"
@@ -112,10 +113,10 @@ function App() {
       </nav>
       <div className="hero">
         <h1 className="header">
-          Tailwind CSS makes styling React components easier!
+         
         </h1>
         <form onSubmit={handleSubmit}>
-        <h1>Register</h1>
+        <h1 className="register">Registrera dig</h1>
         {inputs.map((input) => (
           <FormInput
             key={input.id}
@@ -133,9 +134,11 @@ function App() {
             
           </div>
         <button>Submit</button>
-      </form>
+        </form>
+      
       </div>
-     
+   
+      <FooterContainer />
     </div>
   );
 }
