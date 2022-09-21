@@ -1,7 +1,9 @@
 .formInput{
     display: flex;
     flex-direction: column;
-    width: 280px;
+    width: 300px;
+    padding:5px 0px;
+    border:1px  black;
 }
 
 input{
@@ -31,3 +33,4 @@ input:invalid[focused="true"]{
 input:invalid[focused="true"] ~ span{
     display: block;
 }
+

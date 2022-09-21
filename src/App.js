@@ -128,8 +128,8 @@ function App() {
           
         ))}
           <div className="App">
-            <input type="checkbox" value={first} onChange={() => handleChange("First")} /> Email
-            <input type="checkbox" value={second} onChange={() => handleChange("Second")} /> Sms
+            <input className="checkbox" type="checkbox" value={first} onChange={() => handleChange("First")} /> Email
+            <input className="checkbox1" type="checkbox" value={second} onChange={() => handleChange("Second")} /> Sms
             <div class="g-recaptcha" data-sitekey="6Lfh-xoeAAAAAL6D9bn_LABq10M1ZtpYup5-wksY"></div>
             
           </div>

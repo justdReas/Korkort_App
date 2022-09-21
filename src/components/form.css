@@ -13,9 +13,9 @@
 }
 
 form{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 0px 60px;
-    border-radius: 10px;
+   /* border-radius: 10px;*/
 }
 
 h1{
@@ -39,4 +39,7 @@ button{
     cursor: pointer;
     margin-top: 15px;
     margin-bottom: 30px;
+}
+.checkbox1{
+  margin-left:3px;
 }
