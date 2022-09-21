@@ -61,14 +61,7 @@ function App() {
       label: "Email",
       required: true,
     },
-    {
-      id: 3,
-      name: "birthday",
-      type: "date",
-      placeholder: "Datum",
-      label: "Datum",
-    },
-    {
+      {
       id: 4,
       name: "Mobilnummer",
       type: "Mobilnummer",
@@ -79,6 +72,16 @@ function App() {
       //pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
       required: true,
     },
+
+
+    {
+      id: 3,
+      name: "birthday",
+      type: "date",
+      placeholder: "Datum",
+      label: "Datum",
+    },
+    
   //   {
   //     id: 5,
   //     name: "confirmPassword",
@@ -130,7 +133,7 @@ function App() {
           <div className="App">
             <input className="checkbox" type="checkbox" value={first} onChange={() => handleChange("First")} /> Email
             <input className="checkbox1" type="checkbox" value={second} onChange={() => handleChange("Second")} /> Sms
-            <div class="g-recaptcha" data-sitekey="6Lfh-xoeAAAAAL6D9bn_LABq10M1ZtpYup5-wksY"></div>
+            <div className="g-recaptcha" data-sitekey="6Lfh-xoeAAAAAL6D9bn_LABq10M1ZtpYup5-wksY"></div>
             
           </div>
         <button>Submit</button>
