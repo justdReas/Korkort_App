@@ -103,7 +103,7 @@ function App() {
   };
   return (
     <div className="wrapper">
-      <nav className="bg-secondary">
+      <nav className="bg-gradient-to-r from-cyan-400 to-blue-400">
      
    
         <Spline
