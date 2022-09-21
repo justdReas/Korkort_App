@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 80px 60px;
+  padding: 20px;
   /* background: radial-gradient(circle, rgba(92,39,251,1) 0%, rgba(183, 163, 231, 0.8) 100%); */
   @media (max-width: 1000px) {
-    padding: 40px 30px;
+    padding: 20px;
   }
 `;
 
@@ -13,15 +13,14 @@ export const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     max-width: 1000px;
-    margin: 0 auto;
-    /* background: red; */
+    margin: auto;
 `
 
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 60px;
+  // margin-left: 50%;
 `;
 
 export const Row = styled.div`
@@ -39,14 +38,14 @@ export const Link = styled.a`
   font-size: 18px;
   text-decoration: none;
   &:hover {
-      color: #ff9c00;
-      transition: 200ms ease-in;
+    color: #c13939;
+    transition: 100ms ease-in;
   }
 `;
 
 export const Title = styled.p`
   font-size: 24px;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   font-weight: bold;
 `;
