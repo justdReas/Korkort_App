@@ -141,8 +141,6 @@ const PostForm = () => {
           />
 
 <div className="App">
-<form onSubmit={handleSubmit}> 
-     </form>
             <input className="checkbox" type="checkbox" value={first} onChange={() => handleChange("setFirst")} /> Email
             <input className="checkbox1" type="checkbox" value={second} onChange={() => handleChange("setSecond")} /> Sms
             <div className="g-recaptcha" data-sitekey="6Lfh-xoeAAAAAL6D9bn_LABq10M1ZtpYup5-wksY"></div>
