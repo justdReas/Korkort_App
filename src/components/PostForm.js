@@ -70,8 +70,10 @@ const PostForm = () => {
         };
         const [first, setFirst] = useState(true);
         const [second, setSecond] = useState(true);
-        const handleChange = (data) => {
-            console.log(data);
+
+        const handleChange = (e) => {
+            setFirst(e.target.value);
+            setSecond(e.target.value);
           }
     
   return (
@@ -139,10 +141,9 @@ const PostForm = () => {
           value={city || ""}
           onChange={handleInputChange} 
           />
-
 <div className="App">
-            <input className="checkbox" type="checkbox" value={first} onChange={() => handleChange("setFirst")} /> Email
-            <input className="checkbox1" type="checkbox" value={second} onChange={() => handleChange("setSecond")} /> Sms
+            <input className="checkbox" type="checkbox" value={first} onChange={handleChange} /> Email
+            <input className="checkbox1" type="checkbox" value={second} onChange={handleChange} /> Sms
             <div className="g-recaptcha" data-sitekey="6Lfh-xoeAAAAAL6D9bn_LABq10M1ZtpYup5-wksY"></div>
           </div>
           <input type="submit" value={id ? "Update" : "Submit" } />
