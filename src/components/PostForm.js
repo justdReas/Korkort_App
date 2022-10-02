@@ -94,7 +94,7 @@ const PostForm = () => {
           value={firstname || ""}
           onChange={handleInputChange} 
           />
-           <label htmlFor="lastname">Lastname</label>
+           <label htmlFor="lastname">Last Name</label>
          <input
           type="text"
           id="lastname"
