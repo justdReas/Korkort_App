@@ -84,7 +84,7 @@ const PostForm = () => {
         }}
         onSubmit={handleSubmit}
         >        
-         <h1 className="register">Registrera dig</h1>
+         <h1 className="register">Register Form</h1>
          <label htmlFor="firstname">First Name</label>
          <input
           type="text"
