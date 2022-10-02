@@ -1,5 +1,6 @@
 
 import PostForm from "./components/PostForm";
+import FormInput from "./components/FormInput.js";
 import "./App.css";
 import "./input.css";
 import "./components/form.css";
@@ -22,6 +23,7 @@ function App() {
         <h1 className="header">
         </h1>
       </div>
+      <FormInput />
       <PostForm />
       <FooterContainer />
     </div>
