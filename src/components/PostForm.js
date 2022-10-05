@@ -68,7 +68,6 @@ const PostForm = () => {
           const handleInputChange = (e) => {
             const {name, value} = e.target;
             setState({...state, [name]: value});
-            console.log("hello");
         };
         const [first, setFirst] = useState(true);
         const [second, setSecond] = useState(true);
