@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import {useParams} from 'react-router-dom';
-import "./postform.css";
+import "./postForm.css";
+import Reaptcha from "reaptcha";
 
 const initialState = {
     firstname: "",
@@ -41,7 +42,7 @@ const PostForm = () => {
             
         
         .then(() => {
-                  setState({firstname: "", lastname: "", email: "", phone:"", date: "", city: "",});
+                  setState({firstname: "", lastname: "", email: "", phone:"", date: "", city: ""});
             })
           .catch((err) => console.log(err.response.data));
           console.log("Course Added Successfully");
@@ -56,7 +57,7 @@ const PostForm = () => {
                     city,
                 })
                 .then(() => {
-                    setState({firstname: "", lastname: "", email: "", phone:"", date: "", city: "",});
+                    setState({firstname: "", lastname: "", email: "", phone:"", date: "", city: ""});
             })
             .catch((err) => console.log(err.response.data));
             console.log("Course Updated Successfully");
@@ -67,6 +68,7 @@ const PostForm = () => {
           const handleInputChange = (e) => {
             const {name, value} = e.target;
             setState({...state, [name]: value});
+            console.log("hello");
         };
         const [first, setFirst] = useState(true);
         const [second, setSecond] = useState(true);
@@ -141,11 +143,12 @@ const PostForm = () => {
           value={city || ""}
           onChange={handleInputChange} 
           />
-<div className="App">
+
             <input className="checkbox" type="checkbox" value={first} onChange={handleChange} /> Email
             <input className="checkbox1" type="checkbox" value={second} onChange={handleChange} /> Sms
-            <div className="g-recaptcha" data-sitekey="6Lfh-xoeAAAAAL6D9bn_LABq10M1ZtpYup5-wksY"></div>
-          </div>
+            <Reaptcha
+          sitekey="6Lfh-xoeAAAAAL6D9bn_LABq10M1ZtpYup5-wksY"
+        />
           <input type="submit" value={id ? "Update" : "Submit" } />
         </form>
     </div>

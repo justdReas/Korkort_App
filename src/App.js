@@ -1,33 +1,29 @@
 
 import PostForm from "./components/PostForm";
-import FormInput from "./components/FormInput.js";
 import "./App.css";
 import "./input.css";
 import "./components/form.css";
 
 import Spline from "@splinetool/react-spline";
-
 import { FooterContainer } from "./containers/footer.js";
 
-function App() {
 
+
+function App() {
+  
   return (
     <div className="wrapper">
       <nav className="bg-gradient-to-r from-cyan-400 to-blue-400">
         <Spline
+        mode="no-cors"
           className="car"
           scene="https://prod.spline.design/xXq89CAzYxe9LNrY/scene.splinecode"
         />
-      </nav>
-      <div className="hero">
-        <h1 className="header">
-        </h1>
-      </div>
-      <FormInput />
+      </nav>  
       <PostForm />
-      <FooterContainer />
+      <FooterContainer />     
     </div>
   );
-};
+}
 
 export default App;
