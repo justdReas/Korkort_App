@@ -1,5 +1,6 @@
 
 import PostForm from "./components/PostForm";
+import City from "./components/City";
 import "./App.css";
 import "./input.css";
 import "./components/form.css";
@@ -21,6 +22,7 @@ function App() {
         />
       </nav>  
       <PostForm />
+      <City />
       <FooterContainer />     
     </div>
   );

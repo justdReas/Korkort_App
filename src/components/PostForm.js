@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import {useParams} from 'react-router-dom';
 import "./postForm.css";
-import Reaptcha from "reaptcha";
+// import Reaptcha from "reaptcha";
 
 const initialState = {
     firstname: "",
@@ -145,9 +145,9 @@ const PostForm = () => {
 
             <input className="checkbox" type="checkbox" value={first} onChange={handleChange} /> Email
             <input className="checkbox1" type="checkbox" value={second} onChange={handleChange} /> Sms
-            <Reaptcha
+            {/* <Reaptcha
           sitekey="6Lfh-xoeAAAAAL6D9bn_LABq10M1ZtpYup5-wksY"
-        />
+        /> */}
           <input type="submit" value={id ? "Update" : "Submit" } />
         </form>
     </div>
